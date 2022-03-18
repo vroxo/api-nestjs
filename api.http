@@ -1,0 +1,31 @@
+GET http://host.docker.internal:3000/tweets
+
+###
+POST http://host.docker.internal:3000/tweets
+Content-Type: application/json
+
+{
+    "Text": "Imersão comçou....",
+    "User": {
+        "Name": "Vitor Roxo"
+    }
+
+}
+
+###
+GET http://host.docker.internal:3000/mail-list
+
+###
+POST http://host.docker.internal:3000/mail-list
+Content-Type: application/json
+
+{
+    "emails": [
+        "vitor.email@email.com",
+        "user@test.com",
+        "user2@test.com",
+        "user3@test.com",
+        "user4@test.com",
+        "user5@test.com"
+    ]
+}
