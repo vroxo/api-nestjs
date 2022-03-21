@@ -1,8 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ScheduleModule } from '@nestjs/schedule';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { TweetsModule } from './tweets/tweets.module';
 import { MailListModule } from './mail-list/mail-list.module';
 import { BullModule } from '@nestjs/bull';
@@ -25,7 +23,7 @@ import { ConfigModule } from '@nestjs/config';
     TweetsModule,
     MailListModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
